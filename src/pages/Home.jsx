@@ -4,14 +4,12 @@ import Marquee from 'react-fast-marquee';
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
 import SpecialProduct from '../components/SpecialProduct';
-import { FaUser } from 'react-icons/fa'; 
+import { FaUser } from 'react-icons/fa';
 import Reviews from './Reviews';
 
 const Home = () => {
 	return (
 		<>
-
-		
 			<section className="home-wrapper-1 py-5">
 				<div className="container-xxl">
 					<div className="row">
@@ -230,55 +228,67 @@ const Home = () => {
 				</div>
 			</section>
 
-			<section className='featured-wrapper py-5 home-wrapper-2'>
-              <div className="container-xxl">
-				<div className="row">
-				<h3 className="section-heading">Our New Offers</h3>
-				<div className="col-3">
-						<div className="famous-card position-relative">
-							<img  src='images/famous.jpg' className='img-fluid' alt='famous'/>
-							<div className='famous-content position-absolute'>	
-								<h5>Watch</h5>
-								<h6>Small Watch Sereies 7</h6>
-								<p>From $399 or $ 16.62/mo. for 24 mo. *</p>
+			<section className="featured-wrapper py-5 home-wrapper-2">
+				<div className="container-xxl">
+					<div className="row">
+						<h3 className="section-heading">Our New Offers</h3>
+						<div className="col-3">
+							<div className="famous-card position-relative">
+								<img
+									src="images/famous.jpg"
+									className="img-fluid"
+									alt="famous"
+								/>
+								<div className="famous-content position-absolute">
+									<h5>Watch</h5>
+									<h6>Small Watch Sereies 7</h6>
+									<p>From $399 or $ 16.62/mo. for 24 mo. *</p>
+								</div>
 							</div>
-						</div>	
-					</div>
+						</div>
 
-					<div className="col-3">
-						<div className="famous-card position-relative">
-							<img  src='images/laptop2.jpg' className='img-fluid' alt='famous'/>
-							<div className='famous-content position-absolute'>	
-								<h5>Big Screen</h5>
-								<h6>600 nits of brightness</h6>
-								<p>27 inch 5K Retina display*</p>
+						<div className="col-3">
+							<div className="famous-card position-relative">
+								<img
+									src="images/laptop2.jpg"
+									className="img-fluid"
+									alt="famous"
+								/>
+								<div className="famous-content position-absolute">
+									<h5>Big Screen</h5>
+									<h6>600 nits of brightness</h6>
+									<p>27 inch 5K Retina display*</p>
+								</div>
 							</div>
-						</div>	
-					</div>
+						</div>
 
-					<div className="col-3">
-						<div className="famous-card position-relative">
-							<img  src='images/ear.jpg' className='img-fluid' alt='famous'/>
-							<div className='famous-content position-absolute'>	
-								<h5>Most Earphones</h5>
-								<h6>48 Hours Charge</h6>
-								<p>Smooth use Just 10k now do shop*</p>
+						<div className="col-3">
+							<div className="famous-card position-relative">
+								<img src="images/ear.jpg" className="img-fluid" alt="famous" />
+								<div className="famous-content position-absolute">
+									<h5>Most Earphones</h5>
+									<h6>48 Hours Charge</h6>
+									<p>Smooth use Just 10k now do shop*</p>
+								</div>
 							</div>
-						</div>	
-					</div>
+						</div>
 
-					<div className="col-3">
-						<div className="famous-card position-relative">
-							<img  src='images/phone.jpg' className='img-fluid' alt='famous'/>
-							<div className='famous-content position-absolute'>	
-								<h5>Smart Mobile</h5>
-								<h6>Small Mobiles Sereies 7</h6>
-								<p>Upto Start 10k to 100k*</p>
+						<div className="col-3">
+							<div className="famous-card position-relative">
+								<img
+									src="images/phone.jpg"
+									className="img-fluid"
+									alt="famous"
+								/>
+								<div className="famous-content position-absolute">
+									<h5>Smart Mobile</h5>
+									<h6>Small Mobiles Sereies 7</h6>
+									<p>Upto Start 10k to 100k*</p>
+								</div>
 							</div>
-						</div>	
+						</div>
 					</div>
 				</div>
-			  </div>
 			</section>
 
 			<section className="marque-wrapper py-5">
@@ -335,7 +345,6 @@ const Home = () => {
 							<SpecialProduct />
 							<SpecialProduct />
 							<SpecialProduct />
-							
 						</div>
 					</div>
 				</div>
@@ -360,16 +369,11 @@ const Home = () => {
 					<div className="row">
 						<div className="col-12">
 							<h3 className="section-heading">Customer Reviews</h3>
-							
 						</div>
 						<Reviews showWriteReview={true} />
 					</div>
 				</div>
 			</section>
-
-			
-
-
 		</>
 	);
 };
